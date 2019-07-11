@@ -5,7 +5,7 @@
 // @description Copy & Paste Lists of EC2 Instances and EBS Volumes from excel or between regions (version 4 rewrite by mtoerpe@)
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
-// @version     4.0.0
+// @version     4.0.1
 // @downloadURL https://drive.corp.amazon.com/view/mtoerpe@/public/smc/smc_copy_paste.user.js
 // @updateURL   https://drive.corp.amazon.com/view/mtoerpe@/public/smc/smc_copy_paste.user.js
 // @grant       none
