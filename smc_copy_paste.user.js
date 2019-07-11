@@ -73,7 +73,7 @@ var INSTANCE_INPUT_FIELD_NAMES = [
   
   var intValId;
   
-  var innerHTML = `EC2/EBS only - Clipboard (<a href="https://drive.corp.amazon.com/documents/elsenhuc@/public/SMCPaste_Template_v3.xlsx" target="_blank">Sample Input</a>):
+  var innerHTML = `EC2/EBS only - Clipboard (<a href="https://drive.corp.amazon.com/view/mtoerpe@/public/smc/SMCPaste_Template_v4.xlsx" target="_blank">Sample Input</a>):
   <textarea id="paste-data" rows="1" cols="10" style="width:500px;vertical-align: middle;"></textarea>
   <button id="copy-instances" type="button" style="background-color:#FF00FF">Copy</button>
   <button id="paste-instances" type="button" style="background-color:#FF00FF">Paste</button>

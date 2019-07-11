@@ -2,7 +2,8 @@
 
 Tampermonkey scripts for the AWS Simple Monthly Calculator
 
-1) 
+1) smc_copy_paste: Copy & Paste Lists of EC2 Instances and EBS Volumes from excel or between regions (version 4 rewrite by mtoerpe@)
+2) smc_ri_switch: Allows mass change of billing type (On-Demand <-> RIs)
 
 ## Limits
 
