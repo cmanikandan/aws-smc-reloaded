@@ -12,5 +12,5 @@ EC2 & EBS only
 ## Backlog
 
 - Highlight Instances for SAP
-- Calc effective monthly also for 3 YR AURI
+- Calc effective monthly also for 3 YR / 1 YR RI
 - ADD EXPORT FOR MAP e.g. Save Dialog
