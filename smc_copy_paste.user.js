@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        SMC Paste Automator
+// @name        SMC Paste Automator REL
 // @author      maitreyr, elsenhuc, mtoerpe
 // @namespace   aws
 // @description Copy & Paste Lists of EC2 Instances and EBS Volumes from excel or between regions (version 4 rewrite by mtoerpe@)

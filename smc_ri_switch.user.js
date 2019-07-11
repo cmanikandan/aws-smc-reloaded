@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        SMC RI Automator
+// @name        SMC RI Automator REL
 // @author      maitreyr, elsenhuc, mtoerpe
 // @namespace   aws
 // @description Allows mass change of billing type (On-Demand <-> RIs)
