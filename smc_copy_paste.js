@@ -6,8 +6,8 @@
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
 // @version     4.0.0
-// @downloadURL xxx
-// @updateURL   xxx
+// @downloadURL https://www.gitcdn.xyz/repo/frumania/aws-smc-reloaded/master/smc_copy_paste.js
+// @updateURL   https://www.gitcdn.xyz/repo/frumania/aws-smc-reloaded/master/smc_copy_paste.js
 // @grant       none
 
 // ==/UserScript==

@@ -7,8 +7,8 @@
 // @grant       none
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
-// @downloadURL xxx
-// @updateURL   xxx
+// @downloadURL https://www.gitcdn.xyz/repo/frumania/aws-smc-reloaded/master/smc_ri_switch.js
+// @updateURL   https://www.gitcdn.xyz/repo/frumania/aws-smc-reloaded/master/smc_ri_switch.js
 
 // ==/UserScript==
 
