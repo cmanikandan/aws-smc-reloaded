@@ -5,11 +5,13 @@
 // @description Copy & Paste Lists of EC2 Instances and EBS Volumes from excel or between regions (version 4 rewrite by mtoerpe@)
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
-// @version     4.0.1
+// @version     4.0.2
 // @downloadURL https://drive.corp.amazon.com/view/mtoerpe@/public/smc/smc_copy_paste.user.js
 // @updateURL   https://drive.corp.amazon.com/view/mtoerpe@/public/smc/smc_copy_paste.user.js
 // @grant       none
 // ==/UserScript==
+
+//4.0.2 -> Fix EBS Snapshot Storage Round to next Integer in case of double
 
 var INSTANCE_INPUT_FIELD_NAMES = [
     'SF_EC2_INSTANCE_FIELD_DESCRIPTION',
@@ -322,6 +324,7 @@ var INSTANCE_INPUT_FIELD_NAMES = [
   
               // round up to next Integer
               ebsSize = Math.ceil(parseFloat(ebsSizeString));
+              ebssnapshotstorage = Math.ceil(parseFloat(ebssnapshotstorage));
   
               ebsType = getIndex(EBS_VOLUME_TYPES,ebsTypeString);
               if (ebsType == - 1) {
