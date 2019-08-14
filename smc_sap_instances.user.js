@@ -1,4 +1,5 @@
-
+/*
+TODO
 
 https://aws.amazon.com/de/sap/instance-types/
 
@@ -39,3 +40,5 @@ x1e.32xlarge	128	3,904	131,500	✓	✓
 u-6tb1.metal	448*	6,144	480,600	✓	 	 
 u-9tb1.metal	448*	9,216	480,600	✓	 	 
 u-12tb1.metal	448*	12,288	480,600	✓	✓**	 
+
+*/
