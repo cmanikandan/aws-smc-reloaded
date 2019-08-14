@@ -7,8 +7,8 @@
 // @grant       none
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
-// @downloadURL hhttps://drive.corp.amazon.com/view/mtoerpe@/public/smc/smc_ri_switch.user.js
-// @updateURL   https://drive.corp.amazon.com/view/mtoerpe@/public/smc/smc_ri_switch.user.js
+// @downloadURL https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_switch.user.js
+// @updateURL   https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_switch.user.js
 // ==/UserScript==
 
 var SCENARIOS = ['On-Demand',
