@@ -14,6 +14,10 @@
 
 > Allows mass change of billing type (On-Demand <-> RIs)
 
+**smc_ri_monthly** -> [Install](https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_monthly.user.js) 
+
+> Shows effective monthly totals (considering one-time payments = RIs) and 3 YR total
+
  
 ## Further Ideas
 
