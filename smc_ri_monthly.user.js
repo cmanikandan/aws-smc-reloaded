@@ -5,7 +5,7 @@
 // @description Calculates effective monthly rate and 1 & 3 YR totals by considering one-time payment
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
-// @version     1.0.4
+// @version     1.0.5
 // @downloadURL https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_monthly.user.js
 // @updateURL   https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_monthly.user.js
 // @grant       none
@@ -16,7 +16,7 @@ setTimeout(function()
 
 var innerHTML1 = `
     <td colspan="2" style="background-color: chartreuse;">
-    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Effective Total Monthly Payment (RI = One Time Payment / 36 months):</div>
+    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Effective Total Monthly Payment (One-Time=RIs / 36 months + Total Monthly):</div>
     </td>
     <td colspan="2" style="background-color: chartreuse;">
         <table cellspacing="0" cellpadding="0" class="value">
@@ -77,7 +77,7 @@ var innerHTML3 = `
 
 var innerHTML4 = `
     <td colspan="2" style="background-color: orange;">
-    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Total 1 YR Payment (without RI):</div>
+    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Total 1 YR Payment (without One-Time=RIs):</div>
     </td>
     <td colspan="2" style="background-color: orange;">
         <table cellspacing="0" cellpadding="0" class="value">
@@ -99,7 +99,7 @@ var newDiv4 = document.createElement('tr');
 newDiv4.setAttribute('class', 'total');
 newDiv4.innerHTML = innerHTML4;
 var node4 = document.getElementsByClassName('total');
-node4.item(3).parentElement.insertAfter(newDiv4, node4.item(3));
+node4.item(3).parentElement.insertBefore(newDiv4, node4.item(3));
 
 var newDiv1 = document.createElement('tr');
 newDiv1.setAttribute('class', 'total');
