@@ -11,6 +11,9 @@
 // @grant       none
 // ==/UserScript==
 
+setTimeout(function()
+{
+
 var innerHTML1 = `
     <td colspan="2" style="background-color: chartreuse;">
     <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Effective Total Monthly Payment (RI = One Time Payment / 36 months):</div>
@@ -79,3 +82,6 @@ function calceffectmonthly()
 }
 
 calceffectmonthly();
+
+
+}, 10000);
