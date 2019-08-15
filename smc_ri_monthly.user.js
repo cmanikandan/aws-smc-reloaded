@@ -77,6 +77,26 @@ var innerHTML3 = `
 
 var innerHTML4 = `
     <td colspan="2" style="background-color: orange;">
+    <div class="gwt-HTML label" style="width: 575px" aria-hidden="false">Total One-Time Payment:</div>
+    </td>
+    <td colspan="2" style="background-color: orange;">
+        <table cellspacing="0" cellpadding="0" class="value">
+        <tbody>
+        <tr>
+            <td align="left" style="vertical-align: middle;">
+                <div class="gwt-Label">$</div>
+            </td>
+            <td align="left" style="vertical-align: middle;">
+                <input id="smc-ot" type="text" class="gwt-TextBox gwt-TextBox-readonly" readonly="">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+`;
+
+var innerHTML5 = `
+    <td colspan="2" style="background-color: orange;">
     <div class="gwt-HTML label" style="width: 575px" aria-hidden="false">Total 1 YR Payment (without One-Time=RIs):</div>
     </td>
     <td colspan="2" style="background-color: orange;">
@@ -94,12 +114,6 @@ var innerHTML4 = `
         </table>
     </td>
 `;
-
-var newDiv4 = document.createElement('tr');
-newDiv4.setAttribute('class', 'total');
-newDiv4.innerHTML = innerHTML4;
-var node4 = document.getElementsByClassName('total');
-node4.item(3).parentElement.insertBefore(newDiv4, node4.item(3));
 
 var newDiv1 = document.createElement('tr');
 newDiv1.setAttribute('class', 'total');
@@ -119,6 +133,17 @@ newDiv3.innerHTML = innerHTML3;
 var node3 = document.getElementsByClassName('total');
 node3.item(node3.length-1).parentElement.insertBefore(newDiv3, node3.item(node3.length));
 
+var newDiv4 = document.createElement('tr');
+newDiv4.setAttribute('class', 'total');
+newDiv4.innerHTML = innerHTML4;
+var node4 = document.getElementsByClassName('total');
+node4.item(node4.length-1).parentElement.insertBefore(newDiv4, node4.item(node4.length));
+
+var newDiv5 = document.createElement('tr');
+newDiv5.setAttribute('class', 'total');
+newDiv5.innerHTML = innerHTML4;
+var node5 = document.getElementsByClassName('total');
+node5.item(node5.length-1).parentElement.insertBefore(newDiv5, node5.item(node5.length));
 
 var billLabel = document.getElementsByClassName('billLabel').item(0).parentElement;
 billLabel.addEventListener("click", function () {
@@ -149,6 +174,8 @@ function calceffectmonthly()
     document.getElementById('smc-effective-1yr').value = yr1.toFixed(2);
 
     document.getElementById('smc-effective-3yr').value = yr3.toFixed(2);
+
+    document.getElementById('smc-ot').value = parseFloat(RI).toFixed(2);
 
     document.getElementById('smc-1yr').value = yr1nori.toFixed(2);
 }
