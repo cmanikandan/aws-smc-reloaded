@@ -21,5 +21,5 @@
  
 ## Further Ideas
 
-- Highlight/Switch Instances for SAP
+- Highlight Instances for SAP
 - History of last used/opened SMCs (with revision - link to previous url)
