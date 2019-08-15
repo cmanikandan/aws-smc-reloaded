@@ -46,7 +46,7 @@ var innerHTML2 = `
                 <div class="gwt-Label">$</div>
             </td>
             <td align="left" style="vertical-align: middle;">
-                <input id="smc-effective-monthly" type="text" class="gwt-TextBox gwt-TextBox-readonly" readonly="">
+                <input id="smc-effective-3yr" type="text" class="gwt-TextBox gwt-TextBox-readonly" readonly="">
             </td>
         </tr>
         </tbody>
@@ -54,11 +54,17 @@ var innerHTML2 = `
     </td>
 `;
 
-var newDiv = document.createElement('tr');
-newDiv.setAttribute('class', 'total');
-newDiv.innerHTML = innerHTML1;
-var node = document.getElementsByClassName('total');
-node.item(node.length-1).parentElement.insertBefore(newDiv, node.item(node.length));
+var newDiv1 = document.createElement('tr');
+newDiv1.setAttribute('class', 'total');
+newDiv1.innerHTML = innerHTML1;
+var node1 = document.getElementsByClassName('total');
+node1.item(node1.length-1).parentElement.insertBefore(newDiv1, node1.item(node1.length));
+
+var newDiv2 = document.createElement('tr');
+newDiv2.setAttribute('class', 'total');
+newDiv2.innerHTML = innerHTML2;
+var node2 = document.getElementsByClassName('total');
+node2.item(node2.length-1).parentElement.insertBefore(newDiv2, node2.item(node2.length));
 
 var billLabel = document.getElementsByClassName('billLabel').item(0).parentElement;
 billLabel.addEventListener("click", function () {
@@ -76,9 +82,13 @@ function calceffectmonthly()
 
     result = parseFloat(RI)/36 + parseFloat(Month);
 
-    console.log(result);
+    yr3 = result * 36;
 
-    var resultNode = document.getElementById('smc-effective-monthly').value = result.toFixed(2);
+    //console.log(result);
+
+    document.getElementById('smc-effective-monthly').value = result.toFixed(2);
+
+    document.getElementById('smc-effective-3yr').value = yr3.toFixed(2);
 }
 
 calceffectmonthly();
