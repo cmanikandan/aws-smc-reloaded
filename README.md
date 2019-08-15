@@ -23,5 +23,3 @@
 
 - Highlight/Switch Instances for SAP
 - History of last used/opened SMCs (with revision - link to previous url)
-- Calc effective monthly also for 3 YR / 1 YR RI
-- Add export e.g. Save Dialog for MAP
