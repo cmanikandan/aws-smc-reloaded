@@ -5,7 +5,7 @@
 // @description Calculates effective monthly rate and 1 & 3 YR totals by considering one-time payment
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
-// @version     1.0.5
+// @version     1.0.6
 // @downloadURL https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_monthly.user.js
 // @updateURL   https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_monthly.user.js
 // @grant       none
@@ -77,7 +77,7 @@ var innerHTML3 = `
 
 var innerHTML4 = `
     <td colspan="2" style="background-color: orange;">
-    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Total 1 YR Payment (without One-Time=RIs):</div>
+    <div class="gwt-HTML label" style="width: 575px" aria-hidden="false">Total 1 YR Payment (without One-Time=RIs):</div>
     </td>
     <td colspan="2" style="background-color: orange;">
         <table cellspacing="0" cellpadding="0" class="value">
