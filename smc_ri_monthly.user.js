@@ -5,7 +5,7 @@
 // @description Calculates effective monthly rate and 1 & 3 YR totals by considering one-time payment
 // @include     http://calculator.s3.amazonaws.com/index.html*
 // @include     https://calculator.s3.amazonaws.com/index.html*
-// @version     1.0.3
+// @version     1.0.4
 // @downloadURL https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_monthly.user.js
 // @updateURL   https://github.com/frumania/aws-smc-reloaded/raw/master/smc_ri_monthly.user.js
 // @grant       none
@@ -99,7 +99,7 @@ var newDiv4 = document.createElement('tr');
 newDiv4.setAttribute('class', 'total');
 newDiv4.innerHTML = innerHTML4;
 var node4 = document.getElementsByClassName('total');
-node4.item(4).parentElement.insertBefore(newDiv4, node4.item(4));
+node4.item(3).parentElement.insertAfter(newDiv4, node4.item(3));
 
 var newDiv1 = document.createElement('tr');
 newDiv1.setAttribute('class', 'total');
