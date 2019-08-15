@@ -21,5 +21,5 @@
  
 ## Further Ideas
 
-- Highlight Instances for SAP
+- Highlight Instances for SAP, show SAPs & RAM/CPU
 - History of last used/opened SMCs (with revision - link to previous url)
