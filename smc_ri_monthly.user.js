@@ -92,6 +92,7 @@ newDiv3.innerHTML = innerHTML3;
 var node3 = document.getElementsByClassName('total');
 node3.item(node3.length-1).parentElement.insertBefore(newDiv3, node3.item(node3.length));
 
+
 var billLabel = document.getElementsByClassName('billLabel').item(0).parentElement;
 billLabel.addEventListener("click", function () {
     calceffectmonthly();
