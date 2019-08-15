@@ -36,7 +36,7 @@ var innerHTML1 = `
 
 var innerHTML2 = `
     <td colspan="2" style="background-color: chartreuse;">
-    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Effective Total 1 YR:</div>
+    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Effective Total 1 YR Payment:</div>
     </td>
     <td colspan="2" style="background-color: chartreuse;">
         <table cellspacing="0" cellpadding="0" class="value">
@@ -56,7 +56,7 @@ var innerHTML2 = `
 
 var innerHTML3 = `
     <td colspan="2" style="background-color: chartreuse;">
-    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Effective Total 3 YR:</div>
+    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Effective Total 3 YR Payment:</div>
     </td>
     <td colspan="2" style="background-color: chartreuse;">
         <table cellspacing="0" cellpadding="0" class="value">
@@ -73,6 +73,33 @@ var innerHTML3 = `
         </table>
     </td>
 `;
+
+
+var innerHTML4 = `
+    <td colspan="2" style="background-color: orange;">
+    <div class="gwt-HTML label" style="width: 475px" aria-hidden="false">Total 1 YR Payment (without RI):</div>
+    </td>
+    <td colspan="2" style="background-color: orange;">
+        <table cellspacing="0" cellpadding="0" class="value">
+        <tbody>
+        <tr>
+            <td align="left" style="vertical-align: middle;">
+                <div class="gwt-Label">$</div>
+            </td>
+            <td align="left" style="vertical-align: middle;">
+                <input id="smc-1yr" type="text" class="gwt-TextBox gwt-TextBox-readonly" readonly="">
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </td>
+`;
+
+var newDiv4 = document.createElement('tr');
+newDiv4.setAttribute('class', 'total');
+newDiv4.innerHTML = innerHTML4;
+var node4 = document.getElementsByClassName('total');
+node4.item(4).parentElement.insertBefore(newDiv4, node4.item(4));
 
 var newDiv1 = document.createElement('tr');
 newDiv1.setAttribute('class', 'total');
@@ -113,6 +140,8 @@ function calceffectmonthly()
 
     yr3 = result * 36;
 
+    yr1nori = parseFloat(Month) * 12;
+
     //console.log(result);
 
     document.getElementById('smc-effective-monthly').value = result.toFixed(2);
@@ -120,6 +149,8 @@ function calceffectmonthly()
     document.getElementById('smc-effective-1yr').value = yr1.toFixed(2);
 
     document.getElementById('smc-effective-3yr').value = yr3.toFixed(2);
+
+    document.getElementById('smc-1yr').value = yr1nori.toFixed(2);
 }
 
 calceffectmonthly();
